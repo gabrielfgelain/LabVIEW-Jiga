@@ -1,0 +1,436 @@
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:24 - Waiting Bootloader to initialize...
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:26 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:24 - Waiting Bootloader to initialize...
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:28 - Failed to read data from serial port!
+26/05/2026 16:44:26 - Request Boot CRC...
+26/05/2026 16:44:26 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:24 - Waiting Bootloader to initialize...
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:28 - Error! Check error log for more information.
+26/05/2026 16:44:28 - Failed to read data from serial port!
+26/05/2026 16:44:26 - Request Boot CRC...
+26/05/2026 16:44:26 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:24 - Waiting Bootloader to initialize...
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:28 - Error! Check error log for more information.
+26/05/2026 16:44:28 - Failed to read data from serial port!
+26/05/2026 16:44:26 - Request Boot CRC...
+26/05/2026 16:44:26 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:24 - Waiting Bootloader to initialize...
+26/05/2026 16:44:22 - Go to Bootloader first command...
+26/05/2026 16:44:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:20 - Go to Bootloader first command...
+26/05/2026 16:44:20 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:20 - Trying pre-boot baudrate: 57600 bps
+────────────────────────────────────────────────────────────
+--- Attempt 1 failed — Retrying (2/6) ---
+────────────────────────────────────────────────────────────
+
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:34 - Waiting Bootloader to initialize...
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:36 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:34 - Waiting Bootloader to initialize...
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:38 - Failed to read data from serial port!
+26/05/2026 16:44:36 - Request Boot CRC...
+26/05/2026 16:44:36 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:34 - Waiting Bootloader to initialize...
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:38 - Error! Check error log for more information.
+26/05/2026 16:44:38 - Failed to read data from serial port!
+26/05/2026 16:44:36 - Request Boot CRC...
+26/05/2026 16:44:36 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:34 - Waiting Bootloader to initialize...
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+26/05/2026 16:44:38 - Error! Check error log for more information.
+26/05/2026 16:44:38 - Failed to read data from serial port!
+26/05/2026 16:44:36 - Request Boot CRC...
+26/05/2026 16:44:36 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:34 - Waiting Bootloader to initialize...
+26/05/2026 16:44:32 - Go to Bootloader first command...
+26/05/2026 16:44:32 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:32 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:30 - Go to Bootloader first command...
+26/05/2026 16:44:30 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:30 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:29 - Retry attempt 2/6
+────────────────────────────────────────────────────────────
+--- Attempt 2 failed — Retrying (3/6) ---
+────────────────────────────────────────────────────────────
+
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:45 - Waiting Bootloader to initialize...
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:46 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:45 - Waiting Bootloader to initialize...
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:49 - Failed to read data from serial port!
+26/05/2026 16:44:46 - Request Boot CRC...
+26/05/2026 16:44:46 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:45 - Waiting Bootloader to initialize...
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:49 - Error! Check error log for more information.
+26/05/2026 16:44:49 - Failed to read data from serial port!
+26/05/2026 16:44:46 - Request Boot CRC...
+26/05/2026 16:44:46 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:45 - Waiting Bootloader to initialize...
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+26/05/2026 16:44:49 - Error! Check error log for more information.
+26/05/2026 16:44:49 - Failed to read data from serial port!
+26/05/2026 16:44:46 - Request Boot CRC...
+26/05/2026 16:44:46 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:45 - Waiting Bootloader to initialize...
+26/05/2026 16:44:43 - Go to Bootloader first command...
+26/05/2026 16:44:43 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:43 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:41 - Go to Bootloader first command...
+26/05/2026 16:44:41 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:41 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:40 - Retry attempt 3/6
+────────────────────────────────────────────────────────────
+--- Attempt 3 failed — Retrying (4/6) ---
+────────────────────────────────────────────────────────────
+
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:58 - Waiting Bootloader to initialize...
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:44:59 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:58 - Waiting Bootloader to initialize...
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:45:01 - Failed to read data from serial port!
+26/05/2026 16:44:59 - Request Boot CRC...
+26/05/2026 16:44:59 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:58 - Waiting Bootloader to initialize...
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:45:01 - Error! Check error log for more information.
+26/05/2026 16:45:01 - Failed to read data from serial port!
+26/05/2026 16:44:59 - Request Boot CRC...
+26/05/2026 16:44:59 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:58 - Waiting Bootloader to initialize...
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+26/05/2026 16:45:01 - Error! Check error log for more information.
+26/05/2026 16:45:01 - Failed to read data from serial port!
+26/05/2026 16:44:59 - Request Boot CRC...
+26/05/2026 16:44:59 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:44:58 - Waiting Bootloader to initialize...
+26/05/2026 16:44:56 - Go to Bootloader first command...
+26/05/2026 16:44:56 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:44:56 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:44:54 - Go to Bootloader first command...
+26/05/2026 16:44:54 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:44:54 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:44:53 - Retry attempt 4/6
+────────────────────────────────────────────────────────────
+--- Attempt 4 failed — Retrying (5/6) ---
+────────────────────────────────────────────────────────────
+
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:11 - Waiting Bootloader to initialize...
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:12 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:11 - Waiting Bootloader to initialize...
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:14 - Failed to read data from serial port!
+26/05/2026 16:45:12 - Request Boot CRC...
+26/05/2026 16:45:12 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:11 - Waiting Bootloader to initialize...
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:14 - Error! Check error log for more information.
+26/05/2026 16:45:14 - Failed to read data from serial port!
+26/05/2026 16:45:12 - Request Boot CRC...
+26/05/2026 16:45:12 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:11 - Waiting Bootloader to initialize...
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+26/05/2026 16:45:14 - Error! Check error log for more information.
+26/05/2026 16:45:14 - Failed to read data from serial port!
+26/05/2026 16:45:12 - Request Boot CRC...
+26/05/2026 16:45:12 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:11 - Waiting Bootloader to initialize...
+26/05/2026 16:45:09 - Go to Bootloader first command...
+26/05/2026 16:45:09 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:09 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:07 - Go to Bootloader first command...
+26/05/2026 16:45:07 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:07 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:06 - Retry attempt 5/6
+────────────────────────────────────────────────────────────
+--- Attempt 5 failed — Retrying (6/6) ---
+────────────────────────────────────────────────────────────
+
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:22 - Go to Bootloader first command...
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:24 - Waiting Bootloader to initialize...
+26/05/2026 16:45:22 - Go to Bootloader first command...
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:25 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:24 - Waiting Bootloader to initialize...
+26/05/2026 16:45:22 - Go to Bootloader first command...
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:27 - Failed to read data from serial port!
+26/05/2026 16:45:25 - Request Boot CRC...
+26/05/2026 16:45:25 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:24 - Waiting Bootloader to initialize...
+26/05/2026 16:45:22 - Go to Bootloader first command...
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
+26/05/2026 16:45:27 - Error! Check error log for more information.
+26/05/2026 16:45:27 - Failed to read data from serial port!
+26/05/2026 16:45:25 - Request Boot CRC...
+26/05/2026 16:45:25 - Connected PC to App on COM3 @ 600 bps
+26/05/2026 16:45:24 - Waiting Bootloader to initialize...
+26/05/2026 16:45:22 - Go to Bootloader first command...
+26/05/2026 16:45:22 - Connected PC to App on COM3 @ 9600 bps
+26/05/2026 16:45:22 - Trying pre-boot baudrate: 9600 bps
+26/05/2026 16:45:19 - Go to Bootloader first command...
+26/05/2026 16:45:19 - Connected PC to App on COM3 @ 57600 bps
+26/05/2026 16:45:19 - Trying pre-boot baudrate: 57600 bps
+26/05/2026 16:45:18 - Retry attempt 6/6
