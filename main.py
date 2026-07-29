@@ -214,94 +214,45 @@ def main_read_current():
     except Exception:
         return -1.0
 
-def main_read_motor_data():
-    """
-    Retorna:
-    [tensao, corrente, velocidade, temperatura]
-    """
 
-    inv = _get_connection()
-
-    if inv is None:
-        return [-1.0, -1.0, -1.0, -1.0]
-
-    data = []
-
-    # Tensão
-    try:
-        voltage = inv.read(BUS_VOLTAGE)
-        if isinstance(voltage, list):
-            voltage = voltage[0]
-        data.append(float(voltage))
-    except Exception:
-        data.append(-1.0)
-
-    # Corrente
-    try:
-        current = inv.read(CURRENT)
-        if isinstance(current, list):
-            current = current[0]
-        data.append(float(current))
-    except Exception:
-        data.append(-1.0)
-
-    # Velocidade
-    try:
-        speed = inv.read(SPEED)
-        if isinstance(speed, list):
-            speed = speed[0]
-        data.append(float(speed))
-    except Exception:
-        data.append(-1.0)
-
-    # Temperatura
-    try:
-        temperature = inv.read(TEMPERATURE_PCB)
-        if isinstance(temperature, list):
-            temperature = temperature[0]
-        data.append(float(temperature))
-    except Exception:
-        data.append(-1.0)
-
-    return data
 # teste de o main ta funcionando
 
 
 
 # if __name__ == '__main__':
-#     print("--- INICIANDO TESTE DE CONEXÃO PERSISTENTE ---")
+    # print("--- iniciando teste de conexão persistente ---")
     
-#     # 1. Testando a leitura inicial de velocidade (deve retornar 0.0 se parado)
-#     print("\n[TESTE 1] Lendo velocidade inicial...")
-#     vel_inicial = main_read_speed()
-#     print(f"-> Retorno: {vel_inicial} RPM")
+    # # 1. testando a leitura inicial de velocidade (deve retornar 0.0 se parado)
+    # print("\n[teste 1] lendo velocidade inicial...")
+    # vel_inicial = main_read_speed()
+    # print(f"-> retorno: {vel_inicial} rpm")
     
-#     if vel_inicial == -1.0:
-#         print("[ERRO] Não foi possível ler a velocidade. Verifique a fiação ou a porta COM.")
-#     else:
-#         # 2. Testando ligar o motor
-#         print("\n[TESTE 2] Tentando ligar o motor...")
-#         status_ligar = main_turn_on_motor()
-#         print(f"-> Retorno: {status_ligar}")
+    # if vel_inicial == -1.0:
+        # print("[erro] não foi possível ler a velocidade. verifique a fiação ou a porta com.")
+    # else:
+        # # 2. testando ligar o motor
+        # print("\n[teste 2] tentando ligar o motor...")
+        # status_ligar = main_turn_on_motor()
+        # print(f"-> retorno: {status_ligar}")
         
-#         if "Erro" not in status_ligar:
-#             # 3. Aguarda 5 segundos com o motor rodando e monitora a velocidade
-#             print("\n[TESTE 3] Monitorando velocidade por 5 segundos...")
-#             for i in range(5):
-#                 vel = main_read_speed()
-#                 temp = main_read_temperature()
-#                 print(f"   [{i+1}s] Velocidade: {vel} RPM | Temp: {temp} °C")
-#                 time.sleep(1)
+        # if "erro" not in status_ligar:
+            # # 3. aguarda 5 segundos com o motor rodando e monitora a velocidade
+            # print("\n[teste 3] monitorando velocidade por 5 segundos...")
+            # for i in range(5):
+                # vel = main_read_speed()
+                # temp = main_read_temperature()
+                # print(f"   [{i+1}s] velocidade: {vel} rpm | temp: {temp} °c")
+                # time.sleep(1)
             
-#             # 4. Desliga o motor
-#             print("\n[TESTE 4] Desligando o motor...")
-#             status_desligar = main_turn_off_motor()
-#             print(f"-> Retorno: {status_desligar}")
+            # # 4. desliga o motor
+            # print("\n[teste 4] desligando o motor...")
+            # status_desligar = main_turn_off_motor()
+            # print(f"-> retorno: {status_desligar}")
             
-#             # Confirmação final de parada
-#             time.sleep(2)
-#             print(f"-> Velocidade final: {main_read_speed()} RPM")
-#         else:
-#             print("[AVISO] Como houve erro ao ligar, os testes seguintes foram pulados.")
+            # # confirmação final de parada
+            # time.sleep(2)
+            # print(f"-> velocidade final: {main_read_speed()} rpm")
+        # else:
+            # print("[aviso] como houve erro ao ligar, os testes seguintes foram pulados.")
 
-#     print("\n--- FIM DO TESTE ---")
+    # print("\n--- fim do teste ---")
