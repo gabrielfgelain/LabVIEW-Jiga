@@ -214,7 +214,56 @@ def main_read_current():
     except Exception:
         return -1.0
 
+def main_read_motor_data():
+    """
+    Retorna:
+    [tensao, corrente, velocidade, temperatura]
+    """
 
+    inv = _get_connection()
+
+    if inv is None:
+        return [-1.0, -1.0, -1.0, -1.0]
+
+    data = []
+
+    # Tensão
+    try:
+        voltage = inv.read(BUS_VOLTAGE)
+        if isinstance(voltage, list):
+            voltage = voltage[0]
+        data.append(float(voltage))
+    except Exception:
+        data.append(-1.0)
+
+    # Corrente
+    try:
+        current = inv.read(CURRENT)
+        if isinstance(current, list):
+            current = current[0]
+        data.append(float(current))
+    except Exception:
+        data.append(-1.0)
+
+    # Velocidade
+    try:
+        speed = inv.read(SPEED)
+        if isinstance(speed, list):
+            speed = speed[0]
+        data.append(float(speed))
+    except Exception:
+        data.append(-1.0)
+
+    # Temperatura
+    try:
+        temperature = inv.read(TEMPERATURE_PCB)
+        if isinstance(temperature, list):
+            temperature = temperature[0]
+        data.append(float(temperature))
+    except Exception:
+        data.append(-1.0)
+
+    return data
 # teste de o main ta funcionando
 
 
