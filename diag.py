@@ -41,13 +41,21 @@ PARITY = "E"
 TIMEOUT = 1
 SLAVE_ID = 1
 
-# Faixa de endereços a varrer em torno do 5000 (ajuste se quiser mais/menos range)
-SCAN_START = 4990
-SCAN_END = 5010
+# Faixa de endereços a varrer. O teste anterior mostrou SILÊNCIO TOTAL
+# (timeout, não erro de endereço inválido) em toda a faixa 4990-5010,
+# o que sugere que essa região não existe nesse device. Os outros
+# parâmetros que funcionam (SPEED, BUS_VOLTAGE, etc.) estão todos entre
+# 30000-60000, então focamos a varredura nessa vizinhança conhecida.
+SCAN_START = 35000
+SCAN_END = 35130
 
 # Outros slave IDs a testar (além do SLAVE_ID acima), caso a corrente esteja
 # em outro dispositivo do barramento
 OUTROS_SLAVE_IDS = [1, 2, 3]
+
+# Reconecta a cada tentativa, para evitar que o pymodbus feche a conexão
+# sozinho após timeouts seguidos e invalide o restante do teste
+RECONNECT_EVERY_TRY = True
 
 # ==============================================================================
 # FUNÇÕES DE TESTE
@@ -59,14 +67,16 @@ def conectar():
     if not ok:
         print(f"[ERRO] Não foi possível abrir a porta {PORT}")
         sys.exit(1)
-    print(f"[OK] Porta {PORT} aberta (baud={BAUDRATE}, parity={PARITY})\n")
     return client
 
 
-def tentar_leitura(client, address, slave_id, count=1, label=""):
-    """Tenta ler um endereço via holding (03) e input (04) registers.
-    Retorna um dict com os resultados de cada tentativa."""
+def tentar_leitura(address, slave_id, count=1, label=""):
+    """Abre uma conexão nova, tenta ler um endereço via holding (03) e
+    input (04) registers, e fecha a conexão. Reconectar a cada tentativa
+    evita que timeouts seguidos derrubem o client e invalidem os testes
+    seguintes (foi o que aconteceu na primeira rodada)."""
     resultado = {}
+    client = conectar()
 
     # --- Holding registers (function code 03) ---
     try:
@@ -78,6 +88,12 @@ def tentar_leitura(client, address, slave_id, count=1, label=""):
     except Exception as e:
         resultado["holding"] = f"EXCEÇÃO: {e}"
 
+    try:
+        client.close()
+    except Exception:
+        pass
+    client = conectar()
+
     # --- Input registers (function code 04) ---
     try:
         rr = client.read_input_registers(address=address, count=count, device_id=slave_id)
@@ -88,6 +104,11 @@ def tentar_leitura(client, address, slave_id, count=1, label=""):
     except Exception as e:
         resultado["input"] = f"EXCEÇÃO: {e}"
 
+    try:
+        client.close()
+    except Exception:
+        pass
+
     print(f"[addr={address:>5} slave={slave_id} {label}]")
     print(f"    holding(03): {resultado['holding']}")
     print(f"    input  (04): {resultado['input']}")
@@ -95,47 +116,63 @@ def tentar_leitura(client, address, slave_id, count=1, label=""):
     return resultado
 
 
-def teste_1_endereco_atual(client):
+def teste_0_sanity_check():
+    """Confirma que a config básica (porta/baud/parity/slave) está correta,
+    lendo um endereço que sabemos que funciona no main.py (SPEED = 35097)."""
     print("=" * 70)
-    print("TESTE 1: Endereço atual usado para CURRENT (5000), slave =", SLAVE_ID)
+    print("TESTE 0: Sanity check - lendo SPEED (35097), que já funciona no main.py")
     print("=" * 70)
-    tentar_leitura(client, 5000, SLAVE_ID, label="(CURRENT atual)")
+    tentar_leitura(35097, SLAVE_ID, label="(SPEED, referência conhecida)")
     print()
 
 
-def teste_2_varredura(client):
+def teste_1_endereco_atual():
+    print("=" * 70)
+    print("TESTE 1: Endereço atual usado para CURRENT (5000), slave =", SLAVE_ID)
+    print("=" * 70)
+    tentar_leitura(5000, SLAVE_ID, label="(CURRENT atual)")
+    print()
+
+
+def teste_2_varredura():
     print("=" * 70)
     print(f"TESTE 2: Varredura de {SCAN_START} até {SCAN_END}, slave = {SLAVE_ID}")
     print("=" * 70)
     sucesso = []
     for addr in range(SCAN_START, SCAN_END + 1):
-        r = tentar_leitura(client, addr, SLAVE_ID)
+        r = tentar_leitura(addr, SLAVE_ID)
         if "OK" in r["holding"] or "OK" in r["input"]:
             sucesso.append(addr)
         time.sleep(0.05)  # evita sobrecarregar o barramento
     print()
     print(f"--> Endereços que responderam sem erro: {sucesso}")
     print()
+    return sucesso
 
 
-def teste_3_outros_slaves(client):
+def teste_3_outros_slaves():
     print("=" * 70)
     print(f"TESTE 3: Testando endereço 5000 em outros slave IDs {OUTROS_SLAVE_IDS}")
     print("=" * 70)
     for sid in OUTROS_SLAVE_IDS:
-        tentar_leitura(client, 5000, sid, label="(testando slave)")
+        tentar_leitura(5000, sid, label="(testando slave)")
         time.sleep(0.05)
     print()
 
 
-def teste_4_comparar_motor(client):
+def teste_4_comparar_motor(sucesso):
     print("=" * 70)
     print("TESTE 4: Comparar valor do(s) endereço(s) candidato(s) com motor LIGADO/DESLIGADO")
     print("=" * 70)
-    print("Esse teste é manual: depois de identificar endereços candidatos nos")
-    print("testes 2/3, ligue e desligue o motor manualmente e rode:")
+    if not sucesso:
+        print("Nenhum endereço candidato encontrado no Teste 2 — nada para comparar.")
+        print("Considere aumentar a faixa SCAN_START/SCAN_END.")
+        print()
+        return
+    print("Esse teste é manual. Endereços candidatos encontrados:", sucesso)
+    print("Ligue e desligue o motor manualmente e rode, para cada candidato:")
     print()
-    print("    tentar_leitura(client, <endereco_candidato>, <slave_id>)")
+    print("    tentar_leitura(<endereco_candidato>, <slave_id>)")
     print()
     print("Se o valor mudar de forma consistente com o motor ligando/desligando,")
     print("é um forte indício de que esse é o registrador de corrente correto.")
@@ -147,13 +184,9 @@ def teste_4_comparar_motor(client):
 # ==============================================================================
 
 if __name__ == "__main__":
-    client = conectar()
-
-    try:
-        teste_1_endereco_atual(client)
-        teste_2_varredura(client)
-        teste_3_outros_slaves(client)
-        teste_4_comparar_motor(client)
-    finally:
-        client.close()
-        print("[OK] Conexão fechada.")
+    teste_0_sanity_check()
+    teste_1_endereco_atual()
+    sucesso = teste_2_varredura()
+    teste_3_outros_slaves()
+    teste_4_comparar_motor(sucesso)
+    print("[OK] Diagnóstico concluído.")
