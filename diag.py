@@ -1,58 +1,25 @@
-import sys
-import time
+import main
+
+inv = main._get_connection()
+
+if inv is None:
+    print("Erro: sem conexão")
+    exit()
+
+print("===== LEITURA ENDEREÇO 1000 =====")
+
 try:
-    from pymodbus.client import ModbusSerialClient
-except ImportError:
-    from pymodbus.client.sync import ModbusSerialClient
+    valor = inv.read(main.VOLTAGE)
 
-# ==============================================================================
-# CONFIGURAÇÃO OTIMIZADA
-# ==============================================================================
-PORT = "COM3"
-BAUDRATE = 9600
-PARITY = "E"
-TIMEOUT = 0.3  # Reduzido para resposta rápida
-RETRIES = 0    # Não reverte em caso de falha para ganhar tempo
-SLAVE_ID = 1
-ADDR_CURRENT = 5000
+    print("Valor:")
+    print(valor)
 
-def test_current():
-    client = ModbusSerialClient(
-        port=PORT, 
-        baudrate=BAUDRATE, 
-        parity=PARITY, 
-        timeout=TIMEOUT,
-        retries=RETRIES
-    )
-    
-    print(f"\n--- Testando Endereço {ADDR_CURRENT} (Timeout: {TIMEOUT}s) ---")
-    
-    if not client.connect():
-        print(f"[ERRO] Falha ao abrir a porta {PORT}")
-        return
+    print("Tipo:")
+    print(type(valor))
 
-    # Tenta ler como Holding Register (03)
-    print("Tentando Holding Register (03)...", end=" ", flush=True)
-    start = time.time()
-    rr = client.read_holding_registers(address=ADDR_CURRENT, count=1, slave=SLAVE_ID)
-    end = time.time()
-    if rr.isError():
-        print(f"FALHA ({end-start:.2f}s) -> {rr}")
-    else:
-        print(f"SUCESSO ({end-start:.2f}s) -> Valor: {rr.registers}")
+    print("Quantidade:")
+    print(len(valor))
 
-    # Tenta ler como Input Register (04)
-    print("Tentando Input Register (04)...", end=" ", flush=True)
-    start = time.time()
-    ir = client.read_input_registers(address=ADDR_CURRENT, count=1, slave=SLAVE_ID)
-    end = time.time()
-    if ir.isError():
-        print(f"FALHA ({end-start:.2f}s) -> {ir}")
-    else:
-        print(f"SUCESSO ({end-start:.2f}s) -> Valor: {ir.registers}")
-
-    client.close()
-    print("-" * 45)
-
-if __name__ == "__main__":
-    test_current()
+except Exception as e:
+    print("Erro:")
+    print(e)
